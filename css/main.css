@@ -1286,7 +1286,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #1b0aff;
+  background: #2e41db;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2778,10 +2778,7 @@ body footer > div > div {
 .open:before {
   content: "▲";
 }
-/*
 code {
-    color: #ff7600;
-    background: #fbf7f8;
-    margin: 2px;
+  color: #ff511a;
+  margin: 2px;
 }
-*/

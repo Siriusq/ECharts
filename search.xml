@@ -502,13 +502,12 @@
 <p>做完这些之后基本就是完美黑苹果了，登陆你的Apple ID，接着设置就好了</p>
 
 </div></div>
-
 <p>下载后解压，在<code>Clover Configurator</code>中生成自己的机型相关参数</p>
 <a class="btn" href="https://github.com/Siriusq/Acer-TMP645-Hackintosh/releases/download/v1.0/EFI.zip" target="_blank" rel="noopener">
             <i class="fa fa-arrow-right fa-fw"></i>Acer TravelMate P645-SG
           </a>
 
-<p>到BIOS里设置clover默认启动就能愉快的用三系统里</p>
+<p>到BIOS里设置clover默认启动就能愉快的用三系统了</p>
 <h1 id="Ubuntu的美化"><a href="#Ubuntu的美化" class="headerlink" title="Ubuntu的美化"></a>Ubuntu的美化</h1><p>实在是看不惯Ubuntu的基佬紫风格，美化一下。打开终端安装插件<code>apt install chrome-gnome-shell</code></p>
 <h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>使用的主题是<code>Arc Theme</code></p>
 <a class="btn" href="https://github.com/arc-design/arc-theme" target="_blank" rel="noopener">
@@ -2124,14 +2123,20 @@
     <url>/%E5%8F%82%E6%95%B0%E5%8C%96%E8%A1%A8%E7%9A%AE.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">接着上一篇grasshopper的记录，这一部分记录的是平时从各种论坛上看到的参数化表皮立面，全部使用grasshopper生成，不想做立面的时候随手抓一个套上，方案就有了~~全部电池在此下载[Github](https://github.com/Siriusq/Grasshopper)</blockquote>
 
-<p>#菱形网格渐变</p>
+<a id="more"></a>
+
+<h1 id="表皮列表"><a href="#表皮列表" class="headerlink" title="表皮列表"></a>表皮列表</h1><ul>
+<li>垂直的潮汐</li>
+<li>碎片表皮</li>
+</ul>
+<p>未完待续</p>
 ]]></content>
       <categories>
         <category>Architecture</category>
       </categories>
       <tags>
-        <tag>Architecture</tag>
         <tag>Grasshopper</tag>
+        <tag>Architecture</tag>
       </tags>
   </entry>
   <entry>
@@ -2268,8 +2273,8 @@
         <category>Architecture</category>
       </categories>
       <tags>
-        <tag>Architecture</tag>
         <tag>Grasshopper</tag>
+        <tag>Architecture</tag>
       </tags>
   </entry>
   <entry>
@@ -2645,20 +2650,6 @@
       <tags>
         <tag>PTE</tag>
         <tag>English</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python提取视频骨骼节点</title>
-    <url>/Python%E6%8F%90%E5%8F%96%E8%A7%86%E9%A2%91%E9%AA%A8%E9%AA%BC%E8%8A%82%E7%82%B9.html</url>
-    <content><![CDATA[<p>开始炼丹，先占个坑</p>
-]]></content>
-      <categories>
-        <category>Computer Vision</category>
-      </categories>
-      <tags>
-        <tag>opencv</tag>
-        <tag>python</tag>
-        <tag>tensorflow</tag>
       </tags>
   </entry>
   <entry>
