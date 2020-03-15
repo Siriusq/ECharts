@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Next升级+Mac迁移 </title>
+    <url>/Next%E5%8D%87%E7%BA%A7-Mac%E8%BF%81%E7%A7%BB.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">写博客到现在已经快一年了，Next主题也更新了好多版本，新增的pjax真的是太香了，果断更新。顺便把Hexo迁移到mac上面来</blockquote>
+
+<a id="more"></a>
+
+<h1 id="更新说明"><a href="#更新说明" class="headerlink" title="更新说明"></a>更新说明</h1><h2 id="新增功能"><a href="#新增功能" class="headerlink" title="新增功能"></a>新增功能</h2><ul>
+<li>pjax（局部刷新加载页面）</li>
+<li>DarkMode夜间模式（支持Mac等的夜间模式）</li>
+<li>Gitalk（Gitment凉了之后一直没设置评论系统，这次顺路加上）</li>
+<li>Mediumzoom（图片插件）</li>
+<li>CDN（正在进行。。。。。。）</li>
+<li>中英切换（新，正在进行。。。。。。）</li>
+</ul>
+<h2 id="移除功能"><a href="#移除功能" class="headerlink" title="移除功能"></a>移除功能</h2><ul>
+<li>动态背景（占用资源较大，在手机平板等设备上造成卡顿、发热、耗电快等问题）</li>
+<li>i18n-generator（一年也没写过英语的博客，而且这个方案缺陷太大，正在寻找其他解决方案）</li>
+<li>网易云音乐挂件（使用频率极低，拖慢加载速度）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github无法加载图片解决方法</title>
     <url>/Github%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">昨天上 Github 添加图片的时候发现图片不能正常加载了，访问全球最大的同性交友网站没有图片怎么能行（滑稽）。查了一下发现IP又挂了，修改 Hosts 后成功解决，此方法同样适用于 Github 无法访问的问题</blockquote>
@@ -4073,29 +4102,6 @@
   </entry>
   <entry>
     <title>Purpose</title>
-    <url>/Purpose.en.html</url>
-    <content><![CDATA[<h3 id="01"><a href="#01" class="headerlink" title="01"></a>01</h3><p>The purpose of this blog is to record some problems I have faced and make sure I will not struggle with them in the future.</p>
-<h3 id="02"><a href="#02" class="headerlink" title="02"></a>02</h3><p>This blog will record things below：</p>
-<ul>
-<li>Some PTA algorithm problems on PTA solved by C/C++</li>
-<li>Mini-games(just for fun)</li>
-<li>Echarts files（mainly for architect）</li>
-<li>IELTS experience</li>
-<li>Preparation works for study abroad (mainly for CS)</li>
-<li>Python crawler</li>
-<li>Some tutorials（like build this blog）</li>
-</ul>
-<h3 id="03"><a href="#03" class="headerlink" title="03"></a>03</h3><p>I will update this blog when I get some new ideas~</p>
-]]></content>
-      <categories>
-        <category>Dairy</category>
-      </categories>
-      <tags>
-        <tag>Record</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Purpose</title>
     <url>/Purpose.html</url>
     <content><![CDATA[<h3 id="01"><a href="#01" class="headerlink" title="01"></a>01</h3><p>建立博客的初衷是记录一些自己踩过的坑，防止以后踩相同的坑无法自拔。</p>
 <h3 id="02"><a href="#02" class="headerlink" title="02"></a>02</h3><p>博客主要记录的领域有：</p>
@@ -4115,21 +4121,6 @@
       </categories>
       <tags>
         <tag>Record</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>New</title>
-    <url>/New.en.html</url>
-    <content><![CDATA[<blockquote>
-<p>First blog，LOL</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Dairy</category>
-      </categories>
-      <tags>
-        <tag>Record</tag>
-        <tag>First</tag>
       </tags>
   </entry>
   <entry>
