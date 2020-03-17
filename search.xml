@@ -20,7 +20,7 @@
 <li>Mediumzoom（图片插件）</li>
 <li>中英切换（新）</li>
 <li>CDN（进行中）</li>
-<li>Echarts研究中）</li>
+<li>Echarts</li>
 </ul>
 <h2 id="移除功能"><a href="#移除功能" class="headerlink" title="移除功能"></a>移除功能</h2><ul>
 <li>动态背景（占用资源较大，在手机平板等设备上造成卡顿、发热、耗电快等问题）</li>
@@ -28,15 +28,15 @@
 <li>网易云音乐挂件（使用频率极低，拖慢加载速度）</li>
 </ul>
 <h2 id="保留功能"><a href="#保留功能" class="headerlink" title="保留功能"></a>保留功能</h2><ul>
-<li>站内搜索-第三方</li>
-<li>字数与阅读时长统计-第三方自定义</li>
-<li>网站运行时间-自定义</li>
-<li>加载进度条-n-第三方</li>
-<li>崩溃欺骗-自定义</li>
-<li>背景图片-自定义</li>
-<li>鼠标点击特效-自定义</li>
-<li>不蒜子-next</li>
-<li>Live2D看板娘-config</li>
+<li>站内搜索</li>
+<li>字数与阅读时长统计</li>
+<li>网站运行时间</li>
+<li>加载进度条</li>
+<li>崩溃欺骗</li>
+<li>背景图片</li>
+<li>鼠标点击特效</li>
+<li>不蒜子</li>
+<li>Live2D看板娘</li>
 </ul>
 <h1 id="Mac安装过程"><a href="#Mac安装过程" class="headerlink" title="Mac安装过程"></a>Mac安装过程</h1><h2 id="安装软件依赖"><a href="#安装软件依赖" class="headerlink" title="安装软件依赖"></a>安装软件依赖</h2><p>首先下载安装<code>git</code>和<code>node.js</code>,官网如下</p>
 <ul>
@@ -160,81 +160,42 @@
 <p>在<code>next.yml</code>中搜索<code>Progress bar in the top during page loading</code>并设置为</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">live2d</span>:</span><br><span class="line">  <span class="selector-tag">enable</span>: <span class="selector-tag">true</span> 							# 开启<span class="selector-tag">Live2D</span></span><br><span class="line">  <span class="selector-tag">scriptFrom</span>: <span class="selector-tag">local</span> 					   # 插件来源</span><br><span class="line">  pluginRootPath: live2dw/ 				# 插件根目录(相对路径)</span><br><span class="line">  pluginJsPath: lib/ 					  # 脚本文件路径(相对于插件根目录路径)</span><br><span class="line">  pluginModelPath: assets/ 				# 模型文件路径(相对于插件根目录)</span><br><span class="line">  <span class="selector-tag">tagMode</span>: <span class="selector-tag">false</span> 						  # 是否标签模式</span><br><span class="line">  <span class="selector-tag">debug</span>: <span class="selector-tag">false</span> 							# 是否开启调试模式</span><br><span class="line">  <span class="selector-tag">model</span>:</span><br><span class="line">    <span class="selector-tag">use</span>: <span class="selector-tag">live2d-widget-model-wanko</span> 		# 选择模型</span><br><span class="line">  <span class="selector-tag">display</span>:</span><br><span class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">right</span>						# 模型在页面上的位置</span><br><span class="line">    <span class="selector-tag">width</span>: 150 							# 模型宽度</span><br><span class="line">    <span class="selector-tag">height</span>: 300 		 				  # 模型高度</span><br><span class="line">  <span class="selector-tag">mobile</span>:</span><br><span class="line">    <span class="selector-tag">show</span>: <span class="selector-tag">true</span> 							# 是否在手机端显示</span><br><span class="line">  <span class="selector-tag">react</span>:</span><br><span class="line">    <span class="selector-tag">opacity</span>: 1 							# 设置模型透明度</span><br></pre></td></tr></table></figure>
 
-<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><div id="echarts9363" style="width: 85%;height: 400px;margin: 0 auto"></div>
-<script src="https://cdn.bootcss.com/echarts/4.3.0/echarts.common.min.js"></script>
+<h2 id="Echarts"><a href="#Echarts" class="headerlink" title="Echarts"></a>Echarts</h2><p>熊家的可视化图表</p>
+<p>安装的插件使用的是4.3，可以手动调成新的4.6<br>打开<code>./hexo/node_modules/hexo-tag-echarts4/template.html</code>，修改<code>&lt;script src=&quot;https://cdn.bootcss.com/echarts/4.3.0/echarts.common.min.js&quot;&gt;&lt;/script&gt;</code>为<code>&lt;script src=&quot;https://cdn.bootcss.com/echarts/4.6.0/echarts.common.min.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>Bug：有时候需要刷新一下页面才能成功加载</p>
+<p>安装</p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-echarts4 --save</span><br></pre></td></tr></table></figure>
+
+<p>使用<br>400代表图表的高度是400px，85%表示相对宽度是85%，不标明的话默认值是高度400px，宽度81%</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;% echarts 400 '85%' %&#125;</span><br><span class="line">\\<span class="selector-tag">TODO</span> <span class="selector-tag">echarts</span> <span class="selector-tag">contents</span> <span class="selector-tag">goes</span> <span class="selector-tag">here</span></span><br><span class="line">&#123;% endecharts %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>示例</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;% echarts %&#125;</span><br><span class="line">option = &#123;</span><br><span class="line">    <span class="selector-tag">xAxis</span>: &#123;</span><br><span class="line">        <span class="attribute">type</span>: <span class="string">'category'</span>,</span><br><span class="line">        data: [<span class="string">'Mon'</span>, <span class="string">'Tue'</span>, <span class="string">'Wed'</span>, <span class="string">'Thu'</span>, <span class="string">'Fri'</span>, <span class="string">'Sat'</span>, <span class="string">'Sun'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="selector-tag">yAxis</span>: &#123;</span><br><span class="line">        <span class="attribute">type</span>: <span class="string">'value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    series: [&#123;</span><br><span class="line">        <span class="selector-tag">data</span>: <span class="selector-attr">[820, 932, 901, 934, 1290, 1330, 1320]</span>,</span><br><span class="line">        type: 'line'</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;;</span><br><span class="line">&#123;% endecharts %&#125;</span><br></pre></td></tr></table></figure>
+
+<div id="echarts6946" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.common.min.js"></script>
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('echarts9363'));
+	var myChart = echarts.init(document.getElementById('echarts6946'));
 	// 指定图表的配置项和数据
-	{
-    title: {
-        text: "某站点用户访问来源",
-        subtext: "ECharts示例",
-        x: "center"
+	option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     },
-    tooltip: {
-        trigger: "item",
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    yAxis: {
+        type: 'value'
     },
-    legend: {
-        orient: "vertical",
-        x: "left",
-        data: ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜索引擎"]
-    },
-    toolbox: {
-        show: true,
-        feature: {
-            mark: {
-                show: true
-            },
-            dataView: {
-                show: true,
-                readOnly: true
-            },
-            restore: {
-                show: true
-            },
-            saveAsImage: {
-                show: true
-            }
-        }
-    },
-    calculable: true,
-    series: [
-        {
-            name: "访问来源",
-            type: "pie",
-            radius: "55%",
-            center: ["50%", "60%"],
-            data: [
-                {
-                    value: 335,
-                    name: "直接访问"
-                },
-                {
-                    value: 310,
-                    name: "邮件营销"
-                },
-                {
-                    value: 234,
-                    name: "联盟广告"
-                },
-                {
-                    value: 135,
-                    name: "视频广告"
-                },
-                {
-                    value: 1548,
-                    name: "搜索引擎"
-                }
-            ]
-        }
-    ]
-}
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+};
 	// 使用刚指定的配置项和数据显示图表。
 	myChart.setOption(option);
 </script>
 
+<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><p>有空再搞</p>
 <blockquote>
 <p>参考: <a href="https://tding.top/archives/2bd6d82.html" target="_blank" rel="noopener">小丁的个人博客</a></p>
 </blockquote>
