@@ -29,8 +29,8 @@
 <meta property="og:site_name" content="Sirius">
 <meta property="og:description" content="写博客到现在已经快一年了，Next主题也更新了好多版本，新增的pjax真的是太香了，果断更新。顺便把Hexo迁移到mac上面来">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-14T10:52:44.000Z">
-<meta property="article:modified_time" content="2020-03-16T06:52:27.651Z">
+<meta property="article:published_time" content="2020-03-16T10:52:44.000Z">
+<meta property="article:modified_time" content="2020-03-17T06:01:12.684Z">
 <meta property="article:author" content="Sirius">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="MacOS">
@@ -247,14 +247,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-03-14 18:52:44" itemprop="dateCreated datePublished" datetime="2020-03-14T18:52:44+08:00">2020-03-14</time>
+              <time title="创建时间：2020-03-16 18:52:44" itemprop="dateCreated datePublished" datetime="2020-03-16T18:52:44+08:00">2020-03-16</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-16 14:52:27" itemprop="dateModified" datetime="2020-03-16T14:52:27+08:00">2020-03-16</time>
+                <time title="修改时间：2020-03-17 14:01:12" itemprop="dateModified" datetime="2020-03-17T14:01:12+08:00">2020-03-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -279,14 +279,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>294</span>
+              <span>12k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>11 分钟</span>
             </span>
 
         </div>
@@ -302,19 +302,237 @@
 
 <a id="more"></a>
 
-<h1 id="更新说明"><a href="#更新说明" class="headerlink" title="更新说明"></a>更新说明</h1><h2 id="新增功能"><a href="#新增功能" class="headerlink" title="新增功能"></a>新增功能</h2><ul>
+<h1 id="更新说明"><a href="#更新说明" class="headerlink" title="更新说明"></a>更新说明</h1><p>Next主题从7.1到7.7.2的变动较大，直接升级的话小问题比较多，所以这次升级采用了重新安装的方式</p>
+<h2 id="版本对比"><a href="#版本对比" class="headerlink" title="版本对比"></a>版本对比</h2><p>升级前Hexo版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo: 3.8.0</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Windows_NT 10.0.17763 win32 x64</span><br><span class="line">node: 12.14.1</span><br><span class="line">next: 7.1</span><br></pre></td></tr></table></figure>
+<p>升级后Hexo版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo: 4.2.0</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Darwin 18.7.0 darwin x64</span><br><span class="line">node: 13.10.1</span><br><span class="line">next: 7.7.2</span><br></pre></td></tr></table></figure>
+
+<h2 id="新增功能"><a href="#新增功能" class="headerlink" title="新增功能"></a>新增功能</h2><ul>
 <li>pjax（局部刷新加载页面）</li>
 <li>DarkMode夜间模式（支持Mac等的夜间模式）</li>
-<li>Gitalk（Gitment凉了之后一直没设置评论系统，这次顺路加上）</li>
+<li>Gitalk评论（Gitment凉了之后一直没设置评论系统，这次顺路加上）</li>
 <li>Mediumzoom（图片插件）</li>
 <li>中英切换（新）</li>
+<li>CDN（进行中）</li>
+<li>Echarts研究中）</li>
 </ul>
 <h2 id="移除功能"><a href="#移除功能" class="headerlink" title="移除功能"></a>移除功能</h2><ul>
 <li>动态背景（占用资源较大，在手机平板等设备上造成卡顿、发热、耗电快等问题）</li>
 <li>i18n-generator（一年也没写过英语的博客，而且这个方案缺陷太大，正在寻找其他解决方案）</li>
 <li>网易云音乐挂件（使用频率极低，拖慢加载速度）</li>
 </ul>
-<p>做毕设中，慢慢更新。。。。。。</p>
+<h2 id="保留功能"><a href="#保留功能" class="headerlink" title="保留功能"></a>保留功能</h2><ul>
+<li>站内搜索-第三方</li>
+<li>字数与阅读时长统计-第三方自定义</li>
+<li>网站运行时间-自定义</li>
+<li>加载进度条-n-第三方</li>
+<li>崩溃欺骗-自定义</li>
+<li>背景图片-自定义</li>
+<li>鼠标点击特效-自定义</li>
+<li>不蒜子-next</li>
+<li>Live2D看板娘-config</li>
+</ul>
+<h1 id="Mac安装过程"><a href="#Mac安装过程" class="headerlink" title="Mac安装过程"></a>Mac安装过程</h1><h2 id="安装软件依赖"><a href="#安装软件依赖" class="headerlink" title="安装软件依赖"></a>安装软件依赖</h2><p>首先下载安装<code>git</code>和<code>node.js</code>,官网如下</p>
+<ul>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></li>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a></li>
+</ul>
+<p>安装完成后在终端分别输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>检测是否安装成功，成功的话会返回软件版本号</p>
+<h2 id="配置本地目录"><a href="#配置本地目录" class="headerlink" title="配置本地目录"></a>配置本地目录</h2><ul>
+<li>新建一个用于存放博客文件的文件夹</li>
+<li>新建位于文件夹位置的终端窗口</li>
+<li>输入<code>npm install hexo -g</code>安装hexo<ul>
+<li>这一步可能会报错，报错的话使用命令<code>sudo npm install --unsafe-perm --verbose -g hexo</code>来安装hexo</li>
+</ul>
+</li>
+<li>输入<code>npm install</code>安装其他依赖</li>
+<li>输入<code>npm install hexo-deployer-git --save</code>安装部署插件</li>
+<li>输入<code>hexo v</code>查看是否安装成功，成功会返回版本号</li>
+</ul>
+<h2 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h2><ul>
+<li>打开终端</li>
+<li>输入<code>ls -al ~/.ssh</code>检查是否有以前生成的 SSH Key，没有的话继续</li>
+<li>输入<code>ssh-keygen -t rsa -C &quot;Guthub邮箱地址&quot;</code> 然后回车三连</li>
+<li>此时终端会显示文件的生成路径，根据路径找到并打开<code>id_rsa.pub</code></li>
+<li>复制里面的所有内容</li>
+<li>打开Github，在右上角个人头像下拉菜单中找到<code>Settings</code></li>
+<li>打开<code>SSH and GPG keys</code>,点击右上角<code>New SSH key</code></li>
+<li><code>Title</code>随便填,然后在<code>Key</code>中粘贴</li>
+<li>点击<code>Add SSH key</code></li>
+<li>回到Git bash，输入<code>ssh -T git@github.com</code>回车</li>
+<li>首次输入可能会有提醒，输入<code>yes</code>回车即可</li>
+<li>成功返回<code>Hi 用户名! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>就代表成功了</li>
+<li>输入<code>git config --global user.name &quot;用户名&quot;</code></li>
+<li>输入<code>git config --global user.email  &quot;邮箱地址&quot;</code></li>
+</ul>
+<h2 id="安装Next主题"><a href="#安装Next主题" class="headerlink" title="安装Next主题"></a>安装Next主题</h2><p>在终端输入下面的命令安装最新的Next主题</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h1 id="Next主题自定义"><a href="#Next主题自定义" class="headerlink" title="Next主题自定义"></a>Next主题自定义</h1><p>Hexo的配置过程我就不说了，根据原来的<code>_config.yml</code>配置就行，下面要说的Next主题的配置</p>
+<ul>
+<li>Next主题在7.3之后分离了配置文件与主题，详情请见<a href="https://tding.top/archives/2bd6d82.html" target="_blank" rel="noopener">小丁的个人博客</a>。也就是说我们不需要改动原来的<code>./themes/next/_config.yml</code>文件，而是要要将它复制到<code>hexo/source/_data</code>路径下并重命名为<code>next.yml</code>，然后将其中的<code>override</code>设置为<code>true</code>即可作为主题的配置文件使用</li>
+<li>最新的Next主题移除了jquery，一些第三方插件会报错，需要把jquery加回来</li>
+<li>另外我在<code>hexo/source/_data</code>中新建了<code>body-end.swig</code>和<code>styles.styl</code>文件，然后在<code>next.yml</code>的<code>custom_file_path</code>中启用了<code>bodyEnd</code>和<code>style</code>，，将自定义设置与主题文件分离，方便日后升级</li>
+</ul>
+<h2 id="Pjax"><a href="#Pjax" class="headerlink" title="Pjax"></a>Pjax</h2><p>Pjax是基于Ajax的插件，能实现网页局部无刷新载入<br>安装Pjax</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</span><br></pre></td></tr></table></figure>
+<p>在<code>next.yml</code>中搜索<code>pjax</code>并设置为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="Darkmode"><a href="#Darkmode" class="headerlink" title="Darkmode"></a>Darkmode</h2><p>Next主题新增了暗色模式，能够配合系统的暗色主题使用<br>在<code>next.yml</code>中搜索<code>darkmode</code>并设置为<code>auto</code>即可根据系统主题切换亮色/暗色模式</p>
+<h2 id="Gitalk评论"><a href="#Gitalk评论" class="headerlink" title="Gitalk评论"></a>Gitalk评论</h2><p>评论系统，一开始想用Valine来着，结果要实名制，果断弃了</p>
+<ul>
+<li>在Github新建一个仓库<code>gitalk-comment</code>，用来存放评论产生的issues</li>
+<li>点击右上角<code>头像 - Setting - Developer settings - OAuth Apps - New OAuth Apps</code></li>
+<li><code>Application name</code> 随便填</li>
+<li><code>Homepage URL</code>和<code>Authorization callback URL</code>都填自己的博客地址</li>
+<li>点击 <code>Register application</code></li>
+<li>在<code>next.yml</code>中搜索<code>gitalk</code></li>
+<li>复制得到的<code>Cilent ID</code>和<code>Cilent secret</code>到相应位置粘贴</li>
+<li>设置<code>enable</code>为<code>true</code></li>
+<li><code>github_id</code>和<code>admin_user</code>为你的用户名</li>
+<li><code>repo</code>为刚才创建的仓库名<code>gitalk-comment</code></li>
+<li><code>distraction_free_mode</code>是类似facobook的评论遮罩功能</li>
+</ul>
+<p><code>next.yml</code>中的具体配置如下</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># <span class="selector-tag">Gitalk</span></span><br><span class="line"># For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk</span><br><span class="line"><span class="selector-tag">gitalk</span>:</span><br><span class="line">  <span class="selector-tag">enable</span>: <span class="selector-tag">true</span></span><br><span class="line">  <span class="selector-tag">github_id</span>: <span class="selector-tag">Siriusq</span> # <span class="selector-tag">GitHub</span> <span class="selector-tag">repo</span> <span class="selector-tag">owner</span></span><br><span class="line">  <span class="selector-tag">repo</span>: <span class="selector-tag">gitalk-commnet</span> # <span class="selector-tag">Repository</span> <span class="selector-tag">name</span> <span class="selector-tag">to</span> <span class="selector-tag">store</span> <span class="selector-tag">issues</span></span><br><span class="line">  <span class="selector-tag">client_id</span>: <span class="selector-tag">xxxxxxxx</span> # <span class="selector-tag">GitHub</span> <span class="selector-tag">Application</span> <span class="selector-tag">Client</span> <span class="selector-tag">ID</span></span><br><span class="line">  <span class="selector-tag">client_secret</span>: <span class="selector-tag">xxxxxxxx</span> # <span class="selector-tag">GitHub</span> <span class="selector-tag">Application</span> <span class="selector-tag">Client</span> <span class="selector-tag">Secret</span></span><br><span class="line">  <span class="selector-tag">admin_user</span>: <span class="selector-tag">Siriusq</span> # <span class="selector-tag">GitHub</span> <span class="selector-tag">repo</span> <span class="selector-tag">owner</span> <span class="selector-tag">and</span> <span class="selector-tag">collaborators</span>, <span class="selector-tag">only</span> <span class="selector-tag">these</span> <span class="selector-tag">guys</span> <span class="selector-tag">can</span> <span class="selector-tag">initialize</span> <span class="selector-tag">gitHub</span> <span class="selector-tag">issues</span></span><br><span class="line">  <span class="selector-tag">distraction_free_mode</span>: <span class="selector-tag">false</span> # <span class="selector-tag">Facebook-like</span> <span class="selector-tag">distraction</span> <span class="selector-tag">free</span> <span class="selector-tag">mode</span></span><br><span class="line">  # Gitalk's display language depends on user's browser or system environment</span><br><span class="line">  # <span class="selector-tag">If</span> <span class="selector-tag">you</span> <span class="selector-tag">want</span> <span class="selector-tag">everyone</span> <span class="selector-tag">visiting</span> <span class="selector-tag">your</span> <span class="selector-tag">site</span> <span class="selector-tag">to</span> <span class="selector-tag">see</span> <span class="selector-tag">a</span> <span class="selector-tag">uniform</span> <span class="selector-tag">language</span>, <span class="selector-tag">you</span> <span class="selector-tag">can</span> <span class="selector-tag">set</span> <span class="selector-tag">a</span> <span class="selector-tag">force</span> <span class="selector-tag">language</span> <span class="selector-tag">value</span></span><br><span class="line">  # Available values: en | es-ES | fr | ru | zh-CN | zh-TW</span><br><span class="line">  <span class="selector-tag">language</span>:</span><br></pre></td></tr></table></figure>
+
+<h2 id="Mediumzoom"><a href="#Mediumzoom" class="headerlink" title="Mediumzoom"></a>Mediumzoom</h2><p>模仿Medium图片查看方式的插件<br>安装</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install medium-zoom</span><br></pre></td></tr></table></figure>
+<p>在<code>next.yml</code>中搜索<code>mediumzoom</code>并设置为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediumzoom: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="中英切换"><a href="#中英切换" class="headerlink" title="中英切换"></a>中英切换</h2><p>请移步另一篇博客<a href="https://siriusq.top/Hexo-Next-7-7-%E5%8F%8C%E8%AF%AD%E5%88%87%E6%8D%A2.html" target="_blank" rel="noopener">Hexo Next 7.7 双语切换</a></p>
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>查找博客内的内容<br>安装</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+<p>在<code>next.yml</code>中搜索<code>local_search</code>并设置为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="字数与阅读时长统计"><a href="#字数与阅读时长统计" class="headerlink" title="字数与阅读时长统计"></a>字数与阅读时长统计</h2><p>安装</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-symbols-count-<span class="built_in">time</span></span><br></pre></td></tr></table></figure>
+<p>在根目录的<code>_config.yml</code>中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br><span class="line">  exclude_codeblock: false</span><br><span class="line">  awl: 4</span><br><span class="line">  wpm: 275</span><br><span class="line">  suffix: &quot;mins.&quot;</span><br></pre></td></tr></table></figure>
+<p>然后在<code>next.yml</code>中搜索<code>symbols_count_time</code>并设置为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_post: true</span><br><span class="line">  item_text_total: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="网站运行时间"><a href="#网站运行时间" class="headerlink" title="网站运行时间"></a>网站运行时间</h2><p>打开<code>./hexo/themes/next/layout/_partials/footer.swig</code>并添加下列代码</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;span id="timeDate"&gt;载入天数...&lt;/span&gt;&lt;span id="times"&gt;载入时分秒...&lt;/span&gt;</span><br><span class="line">&lt;<span class="selector-tag">script</span>&gt;</span><br><span class="line">    var now = new Date();</span><br><span class="line">    <span class="selector-tag">function</span> <span class="selector-tag">createtime</span>() &#123;</span><br><span class="line">        var grt= new Date("03/31/2019 00:00:00");</span><br><span class="line">        <span class="selector-tag">now</span><span class="selector-class">.setTime</span>(<span class="selector-tag">now</span><span class="selector-class">.getTime</span>()+250);</span><br><span class="line">        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);</span><br><span class="line">        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);</span><br><span class="line">        if(String(hnum).length ==1 )&#123;hnum = "0" + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line">        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = "0" + mnum;&#125;</span><br><span class="line">        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line">        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = "0" + snum;&#125;</span><br><span class="line">        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";</span><br><span class="line">        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";</span><br><span class="line">    &#125;</span><br><span class="line"><span class="selector-tag">setInterval</span>("<span class="selector-tag">createtime</span>()",250);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="加载进度条"><a href="#加载进度条" class="headerlink" title="加载进度条"></a>加载进度条</h2><p>显示当前网页的加载进度<br>安装</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-pace source/lib/pace</span><br></pre></td></tr></table></figure>
+<p>在<code>next.yml</code>中搜索<code>Progress bar in the top during page loading</code>并设置为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pace:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="崩溃欺骗"><a href="#崩溃欺骗" class="headerlink" title="崩溃欺骗"></a>崩溃欺骗</h2><p>在网页标题中添加崩溃欺骗效果，离开页面后标题会更改，切换回来后会恢复正常</p>
+<p>在<code>./hexo/source/js</code>中新建<code>crash_cheat</code>文件，复制下列代码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--崩溃欺骗--&gt;</span><br><span class="line"> <span class="keyword">var</span> OriginTitle = <span class="built_in">document</span>.title;</span><br><span class="line"> <span class="keyword">var</span> titleTime;</span><br><span class="line"> <span class="built_in">document</span>.addEventListener(<span class="string">'visibilitychange'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (<span class="built_in">document</span>.hidden) &#123;</span><br><span class="line">         $(<span class="string">'[rel="icon"]'</span>).attr(<span class="string">'href'</span>, <span class="string">"/img/TEP.ico"</span>);</span><br><span class="line">         <span class="built_in">document</span>.title = <span class="string">'╭(°A°`)╮ 页面崩溃啦 ~'</span>;</span><br><span class="line">         clearTimeout(titleTime);</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">else</span> &#123;</span><br><span class="line">         $(<span class="string">'[rel="icon"]'</span>).attr(<span class="string">'href'</span>, <span class="string">"/favicon.ico"</span>);</span><br><span class="line">         <span class="built_in">document</span>.title = <span class="string">'(ฅ&gt;ω&lt;*ฅ) 噫又好了~'</span> + OriginTitle;</span><br><span class="line">         titleTime = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">             <span class="built_in">document</span>.title = OriginTitle;</span><br><span class="line">         &#125;, <span class="number">2000</span>);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure>
+<p>然后在<code>./hexo/source/_data/body-end.swig</code>中添加</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="selector-tag">--</span>崩溃欺骗<span class="selector-tag">--</span>&gt;</span><br><span class="line">&lt;script type="text/javascript" src="/js/crash_cheat.js"&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="背景图片"><a href="#背景图片" class="headerlink" title="背景图片"></a>背景图片</h2><p>将背景图片放置在<code>./hexo/themes/next/source/images</code>中并命名为<code>background.jpg</code><br>然后在<code>./hexo/source/_data/styles.styl</code>中添加</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    background:url(/images/background.jpg);//图片路径</span><br><span class="line">    background-repeat: no-repeat;//是否重复平铺</span><br><span class="line">    background-attachment: fixed;//是否随着网页上下滚动而滚动，fixed为固定</span><br><span class="line">    background-position: 50% 50%;//图片位置</span><br><span class="line">    background-size: cover;//图片展示大小</span><br><span class="line">    <span class="selector-tag">-webkit-background-size</span>: <span class="selector-tag">cover</span>;</span><br><span class="line">    <span class="selector-tag">-o-background-size</span>: <span class="selector-tag">cover</span>;</span><br><span class="line">    <span class="selector-tag">-moz-background-size</span>: <span class="selector-tag">cover</span>;</span><br><span class="line">    <span class="selector-tag">-ms-background-size</span>: <span class="selector-tag">cover</span>;</span><br><span class="line">    <span class="selector-tag">opacity</span>: 0<span class="selector-class">.9</span>;</span><br><span class="line">    <span class="selector-tag">footer</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span> &#123;</span><br><span class="line">        color:#000000;//底部文字颜色</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="鼠标点击特效"><a href="#鼠标点击特效" class="headerlink" title="鼠标点击特效"></a>鼠标点击特效</h2><p>根据<a href="https://tding.top/archives/2bd6d82.html" target="_blank" rel="noopener">小丁的个人博客</a>更换了鼠标点击的特效，原来的特效对低性能设备不友好<br>在<code>./hexo/themes/next/source/js/cursor</code>中新建<code>fireworks.js</code>，并添加</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">class</span> <span class="selector-tag">Circle</span> &#123;</span><br><span class="line">  constructor(&#123; origin, speed, color, angle, context &#125;) &#123;</span><br><span class="line">    this.origin = origin</span><br><span class="line">    this.position = &#123; ...this.origin &#125;</span><br><span class="line">    this.color = color</span><br><span class="line">    this.speed = speed</span><br><span class="line">    this.angle = angle</span><br><span class="line">    this.context = context</span><br><span class="line">    this.renderCount = 0</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">draw</span>() &#123;</span><br><span class="line">    this.context.fillStyle = this.color</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.context</span><span class="selector-class">.beginPath</span>()</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.context</span><span class="selector-class">.arc</span>(<span class="selector-tag">this</span><span class="selector-class">.position</span><span class="selector-class">.x</span>, <span class="selector-tag">this</span><span class="selector-class">.position</span><span class="selector-class">.y</span>, 2, 0, <span class="selector-tag">Math</span><span class="selector-class">.PI</span> * 2)</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.context</span><span class="selector-class">.fill</span>()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">move</span>() &#123;</span><br><span class="line">    this.position.x = (Math.sin(this.angle) * this.speed) + this.position.x</span><br><span class="line">    this.position.y = (Math.cos(this.angle) * this.speed) + this.position.y + (this.renderCount * 0.3)</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.renderCount</span>++</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">class</span> <span class="selector-tag">Boom</span> &#123;</span><br><span class="line">  constructor (&#123; origin, context, circleCount = 16, area &#125;) &#123;</span><br><span class="line">    this.origin = origin</span><br><span class="line">    this.context = context</span><br><span class="line">    this.circleCount = circleCount</span><br><span class="line">    this.area = area</span><br><span class="line">    this.stop = false</span><br><span class="line">    this.circles = []</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">randomArray</span>(<span class="selector-tag">range</span>) &#123;</span><br><span class="line">    const length = range.length</span><br><span class="line">    const randomIndex = Math.floor(length * Math.random())</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">range</span><span class="selector-attr">[randomIndex]</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">randomColor</span>() &#123;</span><br><span class="line">    const range = ['8', '9', 'A', 'B', 'C', 'D', 'E', 'F']</span><br><span class="line">    return '#' + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">randomRange</span>(<span class="selector-tag">start</span>, <span class="selector-tag">end</span>) &#123;</span><br><span class="line">    return (end - start) * Math.random() + start</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">init</span>() &#123;</span><br><span class="line">    for(let i = 0; i &lt; this.circleCount; i++) &#123;</span><br><span class="line">      const circle = new Circle(&#123;</span><br><span class="line">        <span class="selector-tag">context</span>: <span class="selector-tag">this</span><span class="selector-class">.context</span>,</span><br><span class="line">        <span class="selector-tag">origin</span>: <span class="selector-tag">this</span><span class="selector-class">.origin</span>,</span><br><span class="line">        <span class="selector-tag">color</span>: <span class="selector-tag">this</span><span class="selector-class">.randomColor</span>(),</span><br><span class="line">        <span class="selector-tag">angle</span>: <span class="selector-tag">this</span><span class="selector-class">.randomRange</span>(<span class="selector-tag">Math</span><span class="selector-class">.PI</span> <span class="selector-tag">-</span> 1, <span class="selector-tag">Math</span><span class="selector-class">.PI</span> + 1),</span><br><span class="line">        <span class="selector-tag">speed</span>: <span class="selector-tag">this</span><span class="selector-class">.randomRange</span>(1, 6)</span><br><span class="line">      &#125;)</span><br><span class="line">      <span class="selector-tag">this</span><span class="selector-class">.circles</span><span class="selector-class">.push</span>(<span class="selector-tag">circle</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">move</span>() &#123;</span><br><span class="line">    this.circles.forEach((circle, index) =&gt; &#123;</span><br><span class="line">      if (circle.position.x &gt; this.area.width || circle.position.y &gt; this.area.height) &#123;</span><br><span class="line">        <span class="selector-tag">return</span> <span class="selector-tag">this</span><span class="selector-class">.circles</span><span class="selector-class">.splice</span>(<span class="selector-tag">index</span>, 1)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-tag">circle</span><span class="selector-class">.move</span>()</span><br><span class="line">    &#125;)</span><br><span class="line">    if (this.circles.length == 0) &#123;</span><br><span class="line">      this.stop = true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">draw</span>() &#123;</span><br><span class="line">    this.circles.forEach(circle =&gt; circle.draw())</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">class</span> <span class="selector-tag">CursorSpecialEffects</span> &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    this.computerCanvas = document.createElement('canvas')</span><br><span class="line">    this.renderCanvas = document.createElement('canvas')</span><br><span class="line"></span><br><span class="line">    this.computerContext = this.computerCanvas.getContext('2d')</span><br><span class="line">    this.renderContext = this.renderCanvas.getContext('2d')</span><br><span class="line"></span><br><span class="line">    this.globalWidth = window.innerWidth</span><br><span class="line">    this.globalHeight = window.innerHeight</span><br><span class="line"></span><br><span class="line">    this.booms = []</span><br><span class="line">    this.running = false</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">handleMouseDown</span>(<span class="selector-tag">e</span>) &#123;</span><br><span class="line">    const boom = new Boom(&#123;</span><br><span class="line">      <span class="selector-tag">origin</span>: &#123; <span class="attribute">x</span>: e.clientX, y: e.clientY &#125;,</span><br><span class="line">      <span class="selector-tag">context</span>: <span class="selector-tag">this</span><span class="selector-class">.computerContext</span>,</span><br><span class="line">      <span class="selector-tag">area</span>: &#123;</span><br><span class="line">        <span class="attribute">width</span>: this.globalWidth,</span><br><span class="line">        height: this.globalHeight</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="selector-tag">boom</span><span class="selector-class">.init</span>()</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.booms</span><span class="selector-class">.push</span>(<span class="selector-tag">boom</span>)</span><br><span class="line">    this.running || this.run()</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">handlePageHide</span>() &#123;</span><br><span class="line">    this.booms = []</span><br><span class="line">    this.running = false</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">init</span>() &#123;</span><br><span class="line">    const style = this.renderCanvas.style</span><br><span class="line">    style.position = 'fixed'</span><br><span class="line">    style.top = style.left = 0</span><br><span class="line">    style.zIndex = '999999999999999999999999999999999999999999'</span><br><span class="line">    style.pointerEvents = 'none'</span><br><span class="line"></span><br><span class="line">    style.width = this.renderCanvas.width = this.computerCanvas.width = this.globalWidth</span><br><span class="line">    style.height = this.renderCanvas.height = this.computerCanvas.height = this.globalHeight</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">document</span><span class="selector-class">.body</span><span class="selector-class">.append</span>(<span class="selector-tag">this</span><span class="selector-class">.renderCanvas</span>)</span><br><span class="line"></span><br><span class="line">    window.addEventListener('mousedown', this.handleMouseDown.bind(this))</span><br><span class="line">    window.addEventListener('pagehide', this.handlePageHide.bind(this))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">run</span>() &#123;</span><br><span class="line">    this.running = true</span><br><span class="line">    if (this.booms.length == 0) &#123;</span><br><span class="line">      return this.running = false</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">requestAnimationFrame</span>(<span class="selector-tag">this</span><span class="selector-class">.run</span><span class="selector-class">.bind</span>(<span class="selector-tag">this</span>))</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.computerContext</span><span class="selector-class">.clearRect</span>(0, 0, <span class="selector-tag">this</span><span class="selector-class">.globalWidth</span>, <span class="selector-tag">this</span><span class="selector-class">.globalHeight</span>)</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.renderContext</span><span class="selector-class">.clearRect</span>(0, 0, <span class="selector-tag">this</span><span class="selector-class">.globalWidth</span>, <span class="selector-tag">this</span><span class="selector-class">.globalHeight</span>)</span><br><span class="line"></span><br><span class="line">    this.booms.forEach((boom, index) =&gt; &#123;</span><br><span class="line">      <span class="selector-tag">if</span> (<span class="selector-tag">boom</span><span class="selector-class">.stop</span>) &#123;</span><br><span class="line">        return this.booms.splice(index, 1)</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-tag">boom</span><span class="selector-class">.move</span>()</span><br><span class="line">      <span class="selector-tag">boom</span><span class="selector-class">.draw</span>()</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="selector-tag">this</span><span class="selector-class">.renderContext</span><span class="selector-class">.drawImage</span>(<span class="selector-tag">this</span><span class="selector-class">.computerCanvas</span>, 0, 0, <span class="selector-tag">this</span><span class="selector-class">.globalWidth</span>, <span class="selector-tag">this</span><span class="selector-class">.globalHeight</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const cursorSpecialEffects = new CursorSpecialEffects()</span><br><span class="line"><span class="selector-tag">cursorSpecialEffects</span><span class="selector-class">.init</span>()</span><br></pre></td></tr></table></figure>
+
+<p>然后在<code>./hexo/source/_data/body-end.swig</code>中添加</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 鼠标点击特效 #&#125;</span><br><span class="line">&#123;% if theme.cursor_effect == "fireworks" %&#125;</span><br><span class="line">  &lt;script async src="/js/cursor/fireworks.js"&gt;&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在<code>next.yml</code>中添加</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 鼠标点击特效</span><br><span class="line"><span class="selector-tag">cursor_effect</span>: <span class="selector-tag">fireworks</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="不蒜子"><a href="#不蒜子" class="headerlink" title="不蒜子"></a>不蒜子</h2><p>Next内置了不蒜子统计<br>在<code>next.yml</code>中搜索<code>busuanzi_count</code>并设置为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable: true</span><br></pre></td></tr></table></figure>
+
+<h2 id="自定义单行代码颜色"><a href="#自定义单行代码颜色" class="headerlink" title="自定义单行代码颜色"></a>自定义单行代码颜色</h2><p>在<code>./hexo/source/_data/styles.styl</code>中添加</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">code</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ff511A</span>;</span><br><span class="line">    //background: #fbf7f8;</span><br><span class="line">    <span class="selector-tag">margin</span>: 2<span class="selector-tag">px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Live2D看板娘"><a href="#Live2D看板娘" class="headerlink" title="Live2D看板娘"></a>Live2D看板娘</h2><p>以我安装的<code>tororo</code>为例，其他模型请见<a href="https://github.com/xiazeyu/live2d-widget-models" target="_blank" rel="noopener">官方文档</a><br>安装</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-tororo</span><br></pre></td></tr></table></figure>
+<p>在<code>next.yml</code>中搜索<code>Progress bar in the top during page loading</code>并设置为</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">live2d</span>:</span><br><span class="line">  <span class="selector-tag">enable</span>: <span class="selector-tag">true</span> 							# 开启<span class="selector-tag">Live2D</span></span><br><span class="line">  <span class="selector-tag">scriptFrom</span>: <span class="selector-tag">local</span> 					   # 插件来源</span><br><span class="line">  pluginRootPath: live2dw/ 				# 插件根目录(相对路径)</span><br><span class="line">  pluginJsPath: lib/ 					  # 脚本文件路径(相对于插件根目录路径)</span><br><span class="line">  pluginModelPath: assets/ 				# 模型文件路径(相对于插件根目录)</span><br><span class="line">  <span class="selector-tag">tagMode</span>: <span class="selector-tag">false</span> 						  # 是否标签模式</span><br><span class="line">  <span class="selector-tag">debug</span>: <span class="selector-tag">false</span> 							# 是否开启调试模式</span><br><span class="line">  <span class="selector-tag">model</span>:</span><br><span class="line">    <span class="selector-tag">use</span>: <span class="selector-tag">live2d-widget-model-wanko</span> 		# 选择模型</span><br><span class="line">  <span class="selector-tag">display</span>:</span><br><span class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">right</span>						# 模型在页面上的位置</span><br><span class="line">    <span class="selector-tag">width</span>: 150 							# 模型宽度</span><br><span class="line">    <span class="selector-tag">height</span>: 300 		 				  # 模型高度</span><br><span class="line">  <span class="selector-tag">mobile</span>:</span><br><span class="line">    <span class="selector-tag">show</span>: <span class="selector-tag">true</span> 							# 是否在手机端显示</span><br><span class="line">  <span class="selector-tag">react</span>:</span><br><span class="line">    <span class="selector-tag">opacity</span>: 1 							# 设置模型透明度</span><br></pre></td></tr></table></figure>
+
+<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><div id="echarts9363" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/4.3.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+	// 基于准备好的dom，初始化echarts实例
+	var myChart = echarts.init(document.getElementById('echarts9363'));
+	// 指定图表的配置项和数据
+	{
+    title: {
+        text: "某站点用户访问来源",
+        subtext: "ECharts示例",
+        x: "center"
+    },
+    tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: "vertical",
+        x: "left",
+        data: ["直接访问", "邮件营销", "联盟广告", "视频广告", "搜索引擎"]
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: true
+            },
+            dataView: {
+                show: true,
+                readOnly: true
+            },
+            restore: {
+                show: true
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    series: [
+        {
+            name: "访问来源",
+            type: "pie",
+            radius: "55%",
+            center: ["50%", "60%"],
+            data: [
+                {
+                    value: 335,
+                    name: "直接访问"
+                },
+                {
+                    value: 310,
+                    name: "邮件营销"
+                },
+                {
+                    value: 234,
+                    name: "联盟广告"
+                },
+                {
+                    value: 135,
+                    name: "视频广告"
+                },
+                {
+                    value: 1548,
+                    name: "搜索引擎"
+                }
+            ]
+        }
+    ]
+}
+	// 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+</script>
+
+<blockquote>
+<p>参考: <a href="https://tding.top/archives/2bd6d82.html" target="_blank" rel="noopener">小丁的个人博客</a></p>
+</blockquote>
 
     </div>
 
@@ -334,13 +552,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Github%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" rel="prev" title="Github无法加载图片解决方法">
-      <i class="fa fa-chevron-left"></i> Github无法加载图片解决方法
+    <a href="/Hexo-Next-7-7-%E5%8F%8C%E8%AF%AD%E5%88%87%E6%8D%A2.html" rel="prev" title="Hexo Next 7.7 双语切换">
+      <i class="fa fa-chevron-left"></i> Hexo Next 7.7 双语切换
     </a></div>
-      <div class="post-nav-item">
-    <a href="/Hexo-Next-7-7-%E5%8F%8C%E8%AF%AD%E5%88%87%E6%8D%A2.html" rel="next" title="Hexo Next 7.7 双语切换">
-      Hexo Next 7.7 双语切换 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -401,7 +616,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#更新说明"><span class="nav-number">1.</span> <span class="nav-text">更新说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#新增功能"><span class="nav-number">1.1.</span> <span class="nav-text">新增功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移除功能"><span class="nav-number">1.2.</span> <span class="nav-text">移除功能</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#更新说明"><span class="nav-number">1.</span> <span class="nav-text">更新说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本对比"><span class="nav-number">1.1.</span> <span class="nav-text">版本对比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新增功能"><span class="nav-number">1.2.</span> <span class="nav-text">新增功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移除功能"><span class="nav-number">1.3.</span> <span class="nav-text">移除功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保留功能"><span class="nav-number">1.4.</span> <span class="nav-text">保留功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac安装过程"><span class="nav-number">2.</span> <span class="nav-text">Mac安装过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装软件依赖"><span class="nav-number">2.1.</span> <span class="nav-text">安装软件依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置本地目录"><span class="nav-number">2.2.</span> <span class="nav-text">配置本地目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置ssh"><span class="nav-number">2.3.</span> <span class="nav-text">配置ssh</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Next主题"><span class="nav-number">2.4.</span> <span class="nav-text">安装Next主题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next主题自定义"><span class="nav-number">3.</span> <span class="nav-text">Next主题自定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pjax"><span class="nav-number">3.1.</span> <span class="nav-text">Pjax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Darkmode"><span class="nav-number">3.2.</span> <span class="nav-text">Darkmode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk评论"><span class="nav-number">3.3.</span> <span class="nav-text">Gitalk评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mediumzoom"><span class="nav-number">3.4.</span> <span class="nav-text">Mediumzoom</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中英切换"><span class="nav-number">3.5.</span> <span class="nav-text">中英切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.6.</span> <span class="nav-text">站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字数与阅读时长统计"><span class="nav-number">3.7.</span> <span class="nav-text">字数与阅读时长统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站运行时间"><span class="nav-number">3.8.</span> <span class="nav-text">网站运行时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加载进度条"><span class="nav-number">3.9.</span> <span class="nav-text">加载进度条</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#崩溃欺骗"><span class="nav-number">3.10.</span> <span class="nav-text">崩溃欺骗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#背景图片"><span class="nav-number">3.11.</span> <span class="nav-text">背景图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#鼠标点击特效"><span class="nav-number">3.12.</span> <span class="nav-text">鼠标点击特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不蒜子"><span class="nav-number">3.13.</span> <span class="nav-text">不蒜子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义单行代码颜色"><span class="nav-number">3.14.</span> <span class="nav-text">自定义单行代码颜色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Live2D看板娘"><span class="nav-number">3.15.</span> <span class="nav-text">Live2D看板娘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CDN"><span class="nav-number">3.16.</span> <span class="nav-text">CDN</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -476,12 +691,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">116k</span>
+    <span title="站点总字数">127k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:45</span>
+    <span title="站点阅读时长">1:56</span>
 </div>
 
 <div>
