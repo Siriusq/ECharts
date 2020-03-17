@@ -123,9 +123,14 @@
 <p>然后在<code>next.yml</code>中搜索<code>symbols_count_time</code>并设置为</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_post: true</span><br><span class="line">  item_text_total: true</span><br></pre></td></tr></table></figure>
 
-<h2 id="网站运行时间"><a href="#网站运行时间" class="headerlink" title="网站运行时间"></a>网站运行时间</h2><p>打开<code>./hexo/themes/next/layout/_partials/footer.swig</code>并添加下列代码</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;span id="timeDate"&gt;载入天数...&lt;/span&gt;&lt;span id="times"&gt;载入时分秒...&lt;/span&gt;</span><br><span class="line">&lt;<span class="selector-tag">script</span>&gt;</span><br><span class="line">    var now = new Date();</span><br><span class="line">    <span class="selector-tag">function</span> <span class="selector-tag">createtime</span>() &#123;</span><br><span class="line">        var grt= new Date("03/31/2019 00:00:00");</span><br><span class="line">        <span class="selector-tag">now</span><span class="selector-class">.setTime</span>(<span class="selector-tag">now</span><span class="selector-class">.getTime</span>()+250);</span><br><span class="line">        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);</span><br><span class="line">        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);</span><br><span class="line">        if(String(hnum).length ==1 )&#123;hnum = "0" + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line">        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = "0" + mnum;&#125;</span><br><span class="line">        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line">        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = "0" + snum;&#125;</span><br><span class="line">        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";</span><br><span class="line">        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";</span><br><span class="line">    &#125;</span><br><span class="line"><span class="selector-tag">setInterval</span>("<span class="selector-tag">createtime</span>()",250);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="添加jquery"><a href="#添加jquery" class="headerlink" title="添加jquery"></a>添加jquery</h2><ul>
+<li>新版的Next主题移除了jquery，导致一些老得自定义设置会失效，我直接从老版本的Next主题复制过来了，路径是<code>./hexo/themes/next/source/libs/jquery/jquert-2.2.0.min.js</code>，也可以到<a href="https://code.jquery.com/jquery/" target="_blank" rel="noopener">官网</a>下载</li>
+<li>将jquery放置在<code>./hexo/source/js</code>路径下</li>
+<li>在<code>./hexo/source/_data/body-end.swig</code>添加<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;!--jquery--&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/jquery-2.2.0.min.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="网站运行时间"><a href="#网站运行时间" class="headerlink" title="网站运行时间"></a>网站运行时间</h2>打开<code>./hexo/themes/next/layout/_partials/footer.swig</code>并添加下列代码<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;span id="timeDate"&gt;载入天数...&lt;/span&gt;&lt;span id="times"&gt;载入时分秒...&lt;/span&gt;</span><br><span class="line">&lt;<span class="selector-tag">script</span>&gt;</span><br><span class="line">    var now = new Date();</span><br><span class="line">    <span class="selector-tag">function</span> <span class="selector-tag">createtime</span>() &#123;</span><br><span class="line">        var grt= new Date("03/31/2019 00:00:00");</span><br><span class="line">        <span class="selector-tag">now</span><span class="selector-class">.setTime</span>(<span class="selector-tag">now</span><span class="selector-class">.getTime</span>()+250);</span><br><span class="line">        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);</span><br><span class="line">        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);</span><br><span class="line">        if(String(hnum).length ==1 )&#123;hnum = "0" + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line">        mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = "0" + mnum;&#125;</span><br><span class="line">        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line">        snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = "0" + snum;&#125;</span><br><span class="line">        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";</span><br><span class="line">        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";</span><br><span class="line">    &#125;</span><br><span class="line"><span class="selector-tag">setInterval</span>("<span class="selector-tag">createtime</span>()",250);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
+</li>
+</ul>
 <h2 id="加载进度条"><a href="#加载进度条" class="headerlink" title="加载进度条"></a>加载进度条</h2><p>显示当前网页的加载进度<br>安装</p>
 <figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-pace source/lib/pace</span><br></pre></td></tr></table></figure>
 <p>在<code>next.yml</code>中搜索<code>Progress bar in the top during page loading</code>并设置为</p>
@@ -172,11 +177,11 @@
 <p>示例</p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;% echarts %&#125;</span><br><span class="line">option = &#123;</span><br><span class="line">    <span class="selector-tag">xAxis</span>: &#123;</span><br><span class="line">        <span class="attribute">type</span>: <span class="string">'category'</span>,</span><br><span class="line">        data: [<span class="string">'Mon'</span>, <span class="string">'Tue'</span>, <span class="string">'Wed'</span>, <span class="string">'Thu'</span>, <span class="string">'Fri'</span>, <span class="string">'Sat'</span>, <span class="string">'Sun'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="selector-tag">yAxis</span>: &#123;</span><br><span class="line">        <span class="attribute">type</span>: <span class="string">'value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    series: [&#123;</span><br><span class="line">        <span class="selector-tag">data</span>: <span class="selector-attr">[820, 932, 901, 934, 1290, 1330, 1320]</span>,</span><br><span class="line">        type: 'line'</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;;</span><br><span class="line">&#123;% endecharts %&#125;</span><br></pre></td></tr></table></figure>
 
-<div id="echarts6946" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<div id="echarts7973" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.common.min.js"></script>
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('echarts6946'));
+	var myChart = echarts.init(document.getElementById('echarts7973'));
 	// 指定图表的配置项和数据
 	option = {
     xAxis: {
@@ -195,7 +200,27 @@
 	myChart.setOption(option);
 </script>
 
-<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><p>有空再搞</p>
+<h2 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h2><p>Github的服务器在境外，网站加载时间巨长，而使用CDN加速可以有效缓解这一问题</p>
+<ul>
+<li>登陆<a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a></li>
+<li>输入你的域名并点击点击<code>Add site</code></li>
+<li>选择套餐，选<code>free</code>就好</li>
+<li>点击<code>Confirm plan</code></li>
+<li>Cloudflare会先扫描你的DNS记录，稍等一会会出现你域名现在的解析记录</li>
+<li>点击<code>Continue</code></li>
+<li>打开你域名服务商的网站，用Cloudflare给的两个DNS服务器替换掉原来的服务器</li>
+<li>完成后回到Cloudflare，点击<code>Done, check nameservers</code></li>
+<li>然后慢慢等待生效，生效后会有邮件提醒</li>
+<li>等待的时候可以做一些设置</li>
+<li>SSL/TLS选项<ul>
+<li>Mode使用默认的Full</li>
+<li>Always Use HTTPS设置为On</li>
+<li>Opportunistic Encryption设置为On</li>
+<li>Authenticated Origin Pills设置为On</li>
+</ul>
+</li>
+</ul>
+<p>填坑完成，毕设期间估计要咕咕咕3个月了┏(＾0＾)┛</p>
 <blockquote>
 <p>参考: <a href="https://tding.top/archives/2bd6d82.html" target="_blank" rel="noopener">小丁的个人博客</a></p>
 </blockquote>
@@ -2426,8 +2451,8 @@
         <category>Architecture</category>
       </categories>
       <tags>
-        <tag>Grasshopper</tag>
         <tag>Architecture</tag>
+        <tag>Grasshopper</tag>
       </tags>
   </entry>
   <entry>
@@ -2564,8 +2589,8 @@
         <category>Architecture</category>
       </categories>
       <tags>
-        <tag>Grasshopper</tag>
         <tag>Architecture</tag>
+        <tag>Grasshopper</tag>
       </tags>
   </entry>
   <entry>
