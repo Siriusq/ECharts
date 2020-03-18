@@ -19,7 +19,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"siriusq.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"right","width":320,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"siriusq.github.io","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"right","width":320,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="准备折腾一下笔记本，毕竟不用做建筑狗了，这个笔记本是当年高考完暑假买的，年少无知买了个商务本，众所周知，商务本&#x3D;性能垃圾+贵，所以大二配完台式后给笔记本装了个Fedora，然后就一直在吃灰，这几天升级Fedora的时候崩了，但是今年9月要去国外读书，笔记本还是得用。计划安装 Win10 LTSC，Ubuntu 18.04 LTS，Macos Mojave三系统，把机械硬盘换成固态，升级网卡">
@@ -308,11 +308,11 @@
 
 <p>老规矩先上配置<br>型号：Acer TravelMate P645-SG<br>CPU：Intel Core i7-5500U （2.4GHz/2C4T）（垃圾的一批）<br>GPU：NVIDIA 840M 2G (拆掉独显提升性能系列)<br>内存：8G DDR3L 1600Mhz<br>SSD：建兴L8T 128G msata接口<br>HDD：西数 500G 5400转蓝盘<br>网卡：Intel 7265NGW</p>
 <p>准备升级硬件<br>网卡：换成DW1560，方便黑苹果用，淘宝330<br>硬盘：机械硬盘换成三星860EVO 500G，京东559<br>内存：这个还在纠结，准备把插槽4G的换成8G</p>
-<h1 id="硬件升级"><a href="#硬件升级" class="headerlink" title="硬件升级"></a>硬件升级</h1><p>实不相瞒，我这几天拆了四五次电脑，螺丝都给拧花了一个，下面是拆机图，红色框里是网卡的位置，我已经拆了，绿框是内存，黄框是新换的SSD<br><img src="%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92/1.jpg" alt="拆机图"><br>估计当年脑子里进了不少水，选了建筑专业就算了，买个笔记本也这么奇葩，青黄不接的5代低压CPU + 青黄不接的8系亮机显卡，唯一的优点就是续航长？</p>
+<h1 id="硬件升级"><a href="#硬件升级" class="headerlink" title="硬件升级"></a>硬件升级</h1><p>实不相瞒，我这几天拆了四五次电脑，螺丝都给拧花了一个，下面是拆机图，红色框里是网卡的位置，我已经拆了，绿框是内存，黄框是新换的SSD<br><img data-src="%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92/1.jpg" alt="拆机图"><br>估计当年脑子里进了不少水，选了建筑专业就算了，买个笔记本也这么奇葩，青黄不接的5代低压CPU + 青黄不接的8系亮机显卡，唯一的优点就是续航长？</p>
 <h2 id="网卡"><a href="#网卡" class="headerlink" title="网卡"></a>网卡</h2><p>原装的英特尔网卡当然是不能用了，所以要去某宝买黑苹果可以用的网卡，买之前注意接口和网卡长度，一般都是<code>ngff</code>的小卡</p>
 <p>安装的时候把原来的天线接口断开，用指甲挑一下就开了，然后拧螺丝换上新的，再把天线接上</p>
 <p>DW1560在我的笔记本上有一点问题，蓝牙不能用，三个系统都搜索不到蓝牙设备，查阅资料后发现需要屏蔽背面两个识别针脚，最简单粗暴的方法就是用胶带把这两个贴上，下面上图</p>
-<p><img src="%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92/2.jpg" alt="网卡"></p>
+<p><img data-src="%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92/2.jpg" alt="网卡"></p>
 <p>需要屏蔽的就是红圈里右侧的两个针脚，手残党最好找个镊子贴胶带，注意不要贴到左边的两个。屏蔽之后BIOS自检时间会变长一点，问题不大</p>
 <h2 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h2><p>老电脑，只有一个MSATA和一个SATA3的接口，上不了M.2就很难受</p>
 <p>把原来的500G蓝盘拆下来扔到硬盘盒里做了移动硬盘，虽然速度很垃圾但是勉强能用，分个区给mac做备份</p>
@@ -749,6 +749,23 @@
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Sirius
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://siriusq.github.io/%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92.html" title="笔记本改造计划">https://siriusq.github.io/笔记本改造计划.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -872,6 +889,9 @@
         <a href="mailto:siriuskevin@foxmail.com" title="E-Mail → mailto:siriuskevin@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
   </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
 
@@ -970,6 +990,7 @@ setInterval("createtime()",250);
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -1103,6 +1124,9 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 
 
 <script type="text/javascript" src="/js/fold_action.js"></script>
+
+
+<script type="text/javascript" src="/js/lozad.min.js"></script>
     </div>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
 </html>
