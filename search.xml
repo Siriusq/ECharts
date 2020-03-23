@@ -3,11 +3,11 @@
   <entry>
     <title>3</title>
     <url>/ECharts/3.html</url>
-    <content><![CDATA[<div id="echarts4412" style="width: 85%;height: 400px;margin: 0 auto"></div>
+    <content><![CDATA[<div id="echarts8668" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.common.min.js"></script>
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('echarts4412'));
+	var myChart = echarts.init(document.getElementById('echarts8668'));
 	// 指定图表的配置项和数据
 	option = {
     title: {
@@ -88,11 +88,11 @@
   <entry>
     <title>2</title>
     <url>/ECharts/2.html</url>
-    <content><![CDATA[<div id="echarts6346" style="width: 85%;height: 400px;margin: 0 auto"></div>
+    <content><![CDATA[<div id="echarts722" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.common.min.js"></script>
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('echarts6346'));
+	var myChart = echarts.init(document.getElementById('echarts722'));
 	// 指定图表的配置项和数据
 	var base = +new Date(1968, 9, 3);
 var oneDay = 24 * 3600 * 1000;
@@ -187,11 +187,11 @@ option = {
   <entry>
     <title>1</title>
     <url>/ECharts/1.html</url>
-    <content><![CDATA[<div id="echarts2502" style="width: 85%;height: 400px;margin: 0 auto"></div>
+    <content><![CDATA[<div id="echarts5123" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.common.min.js"></script>
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('echarts2502'));
+	var myChart = echarts.init(document.getElementById('echarts5123'));
 	// 指定图表的配置项和数据
 	option = {
     xAxis: {
